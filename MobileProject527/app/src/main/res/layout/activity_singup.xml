@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/linearborder"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".Singup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="회원 가입"
+        android:textSize="16pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonborder"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editIdsingup"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/singupdoublecheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중복확인" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editpasssingup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonborder"
+        android:hint="Password"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonborder"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editpasscheck"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Password 확인" />
+
+        <Button
+            android:id="@+id/passdoublecheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호확인"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvpasscheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editnicknamesingup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonborder"
+        android:hint="닉네임"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signupcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="확인" />
+
+        <Button
+            android:id="@+id/signupcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="취소"
+            />
+    </LinearLayout>
+
+</LinearLayout>
